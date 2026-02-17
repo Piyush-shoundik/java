@@ -4,14 +4,10 @@ public class sum {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Enter Your first number here");
-        int a = sc.nextInt();
+        String oops= "O" + "O" + "P" + "S"; 
 
-        System.out.println("Enter your second number here");
-        int b = sc.nextInt();
-
-        int c = a + b;
-        System.out.println("Total sum is: " + c );
+        String line = String.join(" " , "O" , "O" ,"P", "S");
+        System.out.println(line);
 
     }
 }
