@@ -4,10 +4,18 @@ public class sum {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        String oops= "O" + "O" + "P" + "S"; 
-
-        String line = String.join(" " , "O" , "O" ,"P", "S");
-        System.out.println(line);
-
+        String[] line = new String[7];
+        
+        line[0] = String.join(" ","   ***   " , "   ***   " , " ******" , "  **** ");
+        line[1] = String.join(" ", " **   ** ", " **   ** ", " **  **", " **    ");
+        line[2] = String.join(" ", "**     **", "**     **", " **  **", "**     ");
+        line[3] = String.join(" ", "**     **", "**     **", " ******", " ***** ");
+        line[4] = String.join(" ", " **   ** ", " **   ** ", " **    ", "     **");
+        line[5] = String.join(" ", "  ** **  ", "  ** **  ", " **    ", "**   **");
+        line[6] = String.join(" ", "   ***   ", "   ***   ", " **    ", "  ***  ");
+    
+        for(int i = 0 ; i < 7; i++){
+            System.out.println(line[i]);
+        }
     }
 }
